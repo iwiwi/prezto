@@ -11,10 +11,24 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+#
+# Load .profile for machine-specific configuration
+#
+if [[ -e "${HOME}/.profile" ]]; then
+  source "${HOME}/.profile" 
+fi
+
+#
+# Disable correction
+# 
 unsetopt correct
 unsetopt correctall
 DISABLE_CORRECTION="true"
 
+#
+# Change LS color
+#
 # http://hajimenovic.hatenablog.jp/entry/2015/03/10/204613
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
