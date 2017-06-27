@@ -15,3 +15,6 @@ unsetopt correct
 unsetopt correctall
 DISABLE_CORRECTION="true"
 
+# http://hajimenovic.hatenablog.jp/entry/2015/03/10/204613
+export LSCOLORS=gxfxcxdxbxegedabagacad
+
